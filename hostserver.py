@@ -67,7 +67,7 @@ LOGIN_PAGE = 'https://mtacc.mobilelegends.com/v3.0/inapp/loginbyemail'
 MONITOR_KEY = 'ABCD1234'
 HERE = os.path.dirname(os.path.abspath(__file__))
 def _resolve_port(value=None):
-    for c in (value, os.environ.get("PORT"), os.environ.get("WAF_PORT"), "8080"):
+    for c in (value, os.environ.get("PORT"), os.environ.get("WAF_PORT"), "5555"):
         if c is None:
             continue
         s = str(c).strip()
@@ -79,7 +79,7 @@ def _resolve_port(value=None):
                 return n
         except Exception:
             pass
-    return 8080
+    return 5555
 
 PORT = _resolve_port()
 
