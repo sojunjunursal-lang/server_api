@@ -434,7 +434,7 @@ def _ensure_waf_loop():
 async def _get_waf_browser():
     global _waf_browser
     if _waf_browser is None:
-        _waf_browser = await launch_async(headless=False, humanize=True)
+        _waf_browser = await launch_async(headless=True, humanize=True)
     return _waf_browser
 
 async def _make_warm_page(browser, wid=0):
