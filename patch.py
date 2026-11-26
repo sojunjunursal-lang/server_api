@@ -55,7 +55,7 @@ except Exception:
 
 OUTPUT_DIR = os.path.join(BASE, "output")
 # hostserver.py default (WAF_PORT=5555). Override with --api or interactive prompt.
-API_URL = "http://127.0.0.1:5555"
+API_URL = "https://5555-agrbnue2d2zlrevvzxgd2rbl2q.instabox.tech"
 NUM_CONTEXTS = 8
 DEBUG = False
 PROXY_POOL = []
