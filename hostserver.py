@@ -412,7 +412,7 @@ WAF_FETCH_URL       = 'https://accountmtapi.moba5v5.com/'
 # Headless + humanized browser pool. Clamped 3..5.
 WARM_SIZE           = int(os.environ.get('WAF_WARM_PAGES', '4'))
 WARM_SIZE           = max(3, min(5, WARM_SIZE))
-HEADLESS_MODE       = os.environ.get('WAF_HEADLESS', '0') != '0'
+HEADLESS_MODE       = os.environ.get('WAF_HEADLESS', '1') != '0'
 HUMANIZE_MODE       = os.environ.get('WAF_HUMANIZE', '1') != '0'
 WARM_REBUILD_USE    = int(os.environ.get('WAF_WARM_REBUILD', '20'))
 POLL_INTERVAL_S     = float(os.environ.get('WAF_POLL_INTERVAL', '0.08'))
